@@ -7,7 +7,7 @@ and terminfo command write to stdout.
 
 ## build
 
-  node-waf configure build
+    node-waf configure build
 
 ## usage
 
