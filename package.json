@@ -1,0 +1,14 @@
+{ "name" : "termutil"
+, "version" : "0.0.1"
+, "author" : "ousttrue@gmail.com"
+, "description" : "terminfo & termios utility for node.js"
+, "scripts" : { "preinstall" : "node-waf configure build" }
+, "main" : "./termutil"
+, "engines" : { "node" : ">=0.3.1" }
+, "licenses" :
+  [ { "type" : "MIT"
+    , "url" : "http://github.com/mscdex/node-ncurses/raw/master/LICENSE"
+    }
+  ]
+, "repository" : { "type" : "git", "url" : "http://github.com/ousttrue/termutil.git" }
+}
