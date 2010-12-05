@@ -1,5 +1,5 @@
 { "name" : "termutil"
-, "version" : "0.0.1"
+, "version" : "0.0.2"
 , "author" : "ousttrue@gmail.com"
 , "description" : "terminfo & termios utility for node.js"
 , "scripts" : { "preinstall" : "node-waf configure build" }

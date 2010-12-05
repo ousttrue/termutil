@@ -48,20 +48,112 @@ public:
                 }
                 break;
             case 2:
+                {
+                    v8::Local<v8::String> cmd=v8::Local<v8::String>::Cast(args[0]);
+                    v8::Local<v8::Integer> p1=v8::Local<v8::Integer>::Cast(args[1]);
+                    cmd->WriteAscii(buf, 0);
+                    Terminfo::tcmd(buf, p1->Value());
+                }
                 break;
             case 3:
+                {
+                    v8::Local<v8::String> cmd=v8::Local<v8::String>::Cast(args[0]);
+                    v8::Local<v8::Integer> p1=v8::Local<v8::Integer>::Cast(args[1]);
+                    v8::Local<v8::Integer> p2=v8::Local<v8::Integer>::Cast(args[2]);
+                    cmd->WriteAscii(buf, 0);
+                    Terminfo::tcmd(buf, p1->Value(), p2->Value());
+                }
                 break;
             case 4:
+                {
+                    v8::Local<v8::String> cmd=v8::Local<v8::String>::Cast(args[0]);
+                    v8::Local<v8::Integer> p1=v8::Local<v8::Integer>::Cast(args[1]);
+                    v8::Local<v8::Integer> p2=v8::Local<v8::Integer>::Cast(args[2]);
+                    v8::Local<v8::Integer> p3=v8::Local<v8::Integer>::Cast(args[3]);
+                    cmd->WriteAscii(buf, 0);
+                    Terminfo::tcmd(buf, p1->Value(), p2->Value(), p3->Value());
+                }
                 break;
             case 5:
+                {
+                    v8::Local<v8::String> cmd=v8::Local<v8::String>::Cast(args[0]);
+                    v8::Local<v8::Integer> p1=v8::Local<v8::Integer>::Cast(args[1]);
+                    v8::Local<v8::Integer> p2=v8::Local<v8::Integer>::Cast(args[2]);
+                    v8::Local<v8::Integer> p3=v8::Local<v8::Integer>::Cast(args[3]);
+                    v8::Local<v8::Integer> p4=v8::Local<v8::Integer>::Cast(args[4]);
+                    cmd->WriteAscii(buf, 0);
+                    Terminfo::tcmd(buf, p1->Value(), p2->Value(), p3->Value(), p4->Value());
+                }
                 break;
             case 6:
+                {
+                    v8::Local<v8::String> cmd=v8::Local<v8::String>::Cast(args[0]);
+                    v8::Local<v8::Integer> p1=v8::Local<v8::Integer>::Cast(args[1]);
+                    v8::Local<v8::Integer> p2=v8::Local<v8::Integer>::Cast(args[2]);
+                    v8::Local<v8::Integer> p3=v8::Local<v8::Integer>::Cast(args[3]);
+                    v8::Local<v8::Integer> p4=v8::Local<v8::Integer>::Cast(args[4]);
+                    v8::Local<v8::Integer> p5=v8::Local<v8::Integer>::Cast(args[5]);
+                    cmd->WriteAscii(buf, 0);
+                    Terminfo::tcmd(buf, p1->Value(), p2->Value(), p3->Value(), p4->Value(), p5->Value());
+                }
                 break;
             case 7:
+                {
+                    v8::Local<v8::String> cmd=v8::Local<v8::String>::Cast(args[0]);
+                    v8::Local<v8::Integer> p1=v8::Local<v8::Integer>::Cast(args[1]);
+                    v8::Local<v8::Integer> p2=v8::Local<v8::Integer>::Cast(args[2]);
+                    v8::Local<v8::Integer> p3=v8::Local<v8::Integer>::Cast(args[3]);
+                    v8::Local<v8::Integer> p4=v8::Local<v8::Integer>::Cast(args[4]);
+                    v8::Local<v8::Integer> p5=v8::Local<v8::Integer>::Cast(args[5]);
+                    v8::Local<v8::Integer> p6=v8::Local<v8::Integer>::Cast(args[6]);
+                    cmd->WriteAscii(buf, 0);
+                    Terminfo::tcmd(buf, p1->Value(), p2->Value(), p3->Value(), p4->Value(), p5->Value(), p6->Value());
+                }
                 break;
             case 8:
+                {
+                    v8::Local<v8::String> cmd=v8::Local<v8::String>::Cast(args[0]);
+                    v8::Local<v8::Integer> p1=v8::Local<v8::Integer>::Cast(args[1]);
+                    v8::Local<v8::Integer> p2=v8::Local<v8::Integer>::Cast(args[2]);
+                    v8::Local<v8::Integer> p3=v8::Local<v8::Integer>::Cast(args[3]);
+                    v8::Local<v8::Integer> p4=v8::Local<v8::Integer>::Cast(args[4]);
+                    v8::Local<v8::Integer> p5=v8::Local<v8::Integer>::Cast(args[5]);
+                    v8::Local<v8::Integer> p6=v8::Local<v8::Integer>::Cast(args[6]);
+                    v8::Local<v8::Integer> p7=v8::Local<v8::Integer>::Cast(args[7]);
+                    cmd->WriteAscii(buf, 0);
+                    Terminfo::tcmd(buf, p1->Value(), p2->Value(), p3->Value(), p4->Value(), p5->Value(), p6->Value(), p7->Value());
+                }
                 break;
             case 9:
+                {
+                    v8::Local<v8::String> cmd=v8::Local<v8::String>::Cast(args[0]);
+                    v8::Local<v8::Integer> p1=v8::Local<v8::Integer>::Cast(args[1]);
+                    v8::Local<v8::Integer> p2=v8::Local<v8::Integer>::Cast(args[2]);
+                    v8::Local<v8::Integer> p3=v8::Local<v8::Integer>::Cast(args[3]);
+                    v8::Local<v8::Integer> p4=v8::Local<v8::Integer>::Cast(args[4]);
+                    v8::Local<v8::Integer> p5=v8::Local<v8::Integer>::Cast(args[5]);
+                    v8::Local<v8::Integer> p6=v8::Local<v8::Integer>::Cast(args[6]);
+                    v8::Local<v8::Integer> p7=v8::Local<v8::Integer>::Cast(args[7]);
+                    v8::Local<v8::Integer> p8=v8::Local<v8::Integer>::Cast(args[8]);
+                    cmd->WriteAscii(buf, 0);
+                    Terminfo::tcmd(buf, p1->Value(), p2->Value(), p3->Value(), p4->Value(), p5->Value(), p6->Value(), p7->Value(), p8->Value());
+                }
+                break;
+            case 10:
+                {
+                    v8::Local<v8::String> cmd=v8::Local<v8::String>::Cast(args[0]);
+                    v8::Local<v8::Integer> p1=v8::Local<v8::Integer>::Cast(args[1]);
+                    v8::Local<v8::Integer> p2=v8::Local<v8::Integer>::Cast(args[2]);
+                    v8::Local<v8::Integer> p3=v8::Local<v8::Integer>::Cast(args[3]);
+                    v8::Local<v8::Integer> p4=v8::Local<v8::Integer>::Cast(args[4]);
+                    v8::Local<v8::Integer> p5=v8::Local<v8::Integer>::Cast(args[5]);
+                    v8::Local<v8::Integer> p6=v8::Local<v8::Integer>::Cast(args[6]);
+                    v8::Local<v8::Integer> p7=v8::Local<v8::Integer>::Cast(args[7]);
+                    v8::Local<v8::Integer> p8=v8::Local<v8::Integer>::Cast(args[8]);
+                    v8::Local<v8::Integer> p9=v8::Local<v8::Integer>::Cast(args[9]);
+                    cmd->WriteAscii(buf, 0);
+                    Terminfo::tcmd(buf, p1->Value(), p2->Value(), p3->Value(), p4->Value(), p5->Value(), p6->Value(), p7->Value(), p8->Value(), p9->Value());
+                }
                 break;
             default:
                 break;

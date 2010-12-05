@@ -86,5 +86,110 @@ public:
         tputs(parmcmd, 1, putchar);
         fflush(stdout);
     }
+    static void tcmd(char *cap, int p1)
+    {
+        errno=0;
+        char *parmcmd=tparm(tigetstr(cap), p1);
+        if(parmcmd==NULL){
+            perror("tparm NULL");
+            exit(EXIT_FAILURE);
+        }
+        tputs(parmcmd, 1, putchar);
+        fflush(stdout);
+    }
+    static void tcmd(char *cap, int p1, int p2)
+    {
+        errno=0;
+        char *parmcmd=tparm(tigetstr(cap), p1, p2);
+        if(parmcmd==NULL){
+            perror("tparm NULL");
+            exit(EXIT_FAILURE);
+        }
+        tputs(parmcmd, 1, putchar);
+        fflush(stdout);
+    }
+    static void tcmd(char *cap, int p1, int p2, int p3)
+    {
+        errno=0;
+        char *parmcmd=tparm(tigetstr(cap), p1, p2, p3);
+        if(parmcmd==NULL){
+            perror("tparm NULL");
+            exit(EXIT_FAILURE);
+        }
+        tputs(parmcmd, 1, putchar);
+        fflush(stdout);
+    }
+    static void tcmd(char *cap, int p1, int p2, int p3, 
+            int p4)
+    {
+        errno=0;
+        char *parmcmd=tparm(tigetstr(cap), p1, p2, p3, p4);
+        if(parmcmd==NULL){
+            perror("tparm NULL");
+            exit(EXIT_FAILURE);
+        }
+        tputs(parmcmd, 1, putchar);
+        fflush(stdout);
+    }
+    static void tcmd(char *cap, int p1, int p2, int p3, 
+            int p4, int p5)
+    {
+        errno=0;
+        char *parmcmd=tparm(tigetstr(cap), p1, p2, p3, p4, p5);
+        if(parmcmd==NULL){
+            perror("tparm NULL");
+            exit(EXIT_FAILURE);
+        }
+        tputs(parmcmd, 1, putchar);
+        fflush(stdout);
+    }
+    static void tcmd(char *cap, int p1, int p2, int p3, 
+            int p4, int p5, int p6)
+    {
+        errno=0;
+        char *parmcmd=tparm(tigetstr(cap), p1, p2, p3, p4, p5, p6);
+        if(parmcmd==NULL){
+            perror("tparm NULL");
+            exit(EXIT_FAILURE);
+        }
+        tputs(parmcmd, 1, putchar);
+        fflush(stdout);
+    }
+    static void tcmd(char *cap, int p1, int p2, int p3, 
+            int p4, int p5, int p6, int p7)
+    {
+        errno=0;
+        char *parmcmd=tparm(tigetstr(cap), p1, p2, p3, p4, p5, p6, p7);
+        if(parmcmd==NULL){
+            perror("tparm NULL");
+            exit(EXIT_FAILURE);
+        }
+        tputs(parmcmd, 1, putchar);
+        fflush(stdout);
+    }
+    static void tcmd(char *cap, int p1, int p2, int p3, 
+            int p4, int p5, int p6, int p7, int p8)
+    {
+        errno=0;
+        char *parmcmd=tparm(tigetstr(cap), p1, p2, p3, p4, p5, p6, p7, p8);
+        if(parmcmd==NULL){
+            perror("tparm NULL");
+            exit(EXIT_FAILURE);
+        }
+        tputs(parmcmd, 1, putchar);
+        fflush(stdout);
+    }
+    static void tcmd(char *cap, int p1, int p2, int p3, 
+            int p4, int p5, int p6, int p7, int p8, int p9)
+    {
+        errno=0;
+        char *parmcmd=tparm(tigetstr(cap), p1, p2, p3, p4, p5, p6, p7, p8, p9);
+        if(parmcmd==NULL){
+            perror("tparm NULL");
+            exit(EXIT_FAILURE);
+        }
+        tputs(parmcmd, 1, putchar);
+        fflush(stdout);
+    }
 };
 

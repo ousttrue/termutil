@@ -37,5 +37,5 @@ and terminfo command write to stdout.
         }
     });
     
-    term.tcmd('clear')
-
+    term.tcmd('clear');
+    term.listen();
