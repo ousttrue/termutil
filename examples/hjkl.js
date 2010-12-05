@@ -25,3 +25,4 @@ term.on('keyinput', function(code){
 });
 
 term.tcmd('clear')
+term.lisetn();
