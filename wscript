@@ -24,9 +24,9 @@ def shutdown():
     src='build/default/termutil.node'
     dst='termutil.node'
     if Options.commands['clean']:
-        if os.path.exists(dst): 
+        if os.fs.exists(dst): 
             os.unlink(dst)
     else:
-        if os.path.exists(src) and not os.path.exists(dst):
+        if os.fs.exists(src) and not os.fs.exists(dst):
             os.symlink(src, dst) 
 
